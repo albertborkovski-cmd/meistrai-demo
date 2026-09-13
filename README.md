@@ -15,3 +15,8 @@ Visos užklausos, pasiūlymai, darbų aktai, žinutės ir pridėti failai saugom
 7. Priimkite darbus ir imituokite mokėjimą.
 
 Tai sukompiliuoti demonstracinės svetainės failai. Pagrindinė projekto saugykla yra privati. Nuotraukų autoriai nurodyti programos pagalbos lange.
+
+
+Atnaujintas dizainas: interaktyvus interjero vaizdas, animuoti perėjimai ir tikrų užsakymo etapų vizualizacija. Judesiai prisitaiko prie sumažinto judesio nustatymo.
+
+Šriftai: [Manrope licencija](licenses/manrope-OFL.txt), [Instrument Serif licencija](licenses/instrument-serif-OFL.txt). Interjero įvadinis vaizdas yra DI sugeneruota iliustracija.
