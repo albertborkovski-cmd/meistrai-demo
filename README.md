@@ -20,3 +20,11 @@ Tai sukompiliuoti demonstracinės svetainės failai. Pagrindinė projekto saugyk
 Atnaujintas dizainas: interaktyvus interjero vaizdas, animuoti perėjimai ir tikrų užsakymo etapų vizualizacija. Judesiai prisitaiko prie sumažinto judesio nustatymo.
 
 Šriftai: [Manrope licencija](licenses/manrope-OFL.txt), [Instrument Serif licencija](licenses/instrument-serif-OFL.txt). Interjero įvadinis vaizdas yra DI sugeneruota iliustracija.
+
+## 3D erdvės studija
+
+[Atidaryti 3D studiją](https://albertborkovski-cmd.github.io/meistrai-demo/#spatial). Įkelkite JPG, PNG arba WebP nuotrauką (iki 15 MB) arba išbandykite pavyzdį. Paspaudus „Sukurti 3D“, naršyklėje veikiantis gylio modelis sukuria sukamą matomo paviršiaus vaizdą. Pirmą kartą atsisiunčiama apie 50 MB modelio ir vykdymo failų; pati nuotrauka apdorojama įrenginyje.
+
+Pažymėkite du taškus, įrašykite realiai išmatuotą atstumą bei pastabą. Galima apskaičiuoti paviršiaus plotą su medžiagų atsarga, atsisiųsti GLB modelį ir tekstinį matmenų planą arba paruošti darbo užklausą. Tai vienos nuotraukos santykinio gylio paviršius, ne tikslus visų objekto pusių skenavimas. Centimetrų modelis nenustato.
+
+Vienas paskutinis 3D projektas automatiškai saugomas šioje naršyklėje. Nauja nuotrauka jį pakeičia. Nuotrauka prie darbo užklausos automatiškai nepridedama. [3D komponentų, modelio ir licencijų informacija](licenses/3d-attribution.txt).

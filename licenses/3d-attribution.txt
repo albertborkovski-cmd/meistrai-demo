@@ -1,0 +1,84 @@
+MEISTRAI — 3D NUOTRAUKOS FUNKCIJOS ŠALTINIAI IR PRANEŠIMAI
+
+Šis failas aprašo 3D funkcijoje naudojamus komponentus. Originalūs licencijų
+tekstai pateikti greta; jų sąlygos nepakeistos.
+
+1. three.js
+
+Versija: 0.183.2
+Autoriai: three.js authors; Copyright © 2010–2026
+Licencija: MIT
+Licencijos kopija: three-MIT.txt
+Šaltinis: https://github.com/mrdoob/three.js
+Licencija nukopijuota iš įdiegtos three 0.183.2 npm pakuotės LICENSE failo.
+Naudojama 3D vaizdui, kameros valdymui, geometrijai ir GLB eksportui.
+
+2. Hugging Face Transformers.js
+
+Versija: @huggingface/transformers 4.2.0
+Licencija: Apache License 2.0
+Licencijos kopija: transformers-Apache-2.0.txt
+Šaltinis: https://github.com/huggingface/transformers.js
+Licencija nukopijuota iš įdiegtos 4.2.0 npm pakuotės LICENSE failo.
+Naudojama nuotraukos paruošimui ir gylio modelio vykdymui naršyklėje.
+
+3. Microsoft ONNX Runtime Web
+
+Versija: 1.26.0-dev.20260416-b7804b056c
+Šaltinio commit: b7804b056c30aa35c1748f8e4e239d0e2ff25d6d
+Copyright (c) Microsoft Corporation
+Licencija: MIT
+Licencijos kopija: onnxruntime-MIT.txt
+Trečiųjų šalių pranešimai: onnxruntime-ThirdPartyNotices.txt
+Šaltinis: https://github.com/microsoft/onnxruntime
+Licencijų šaltiniai, atitinkantys naudojamą runtime commit:
+https://github.com/microsoft/onnxruntime/blob/b7804b056c30aa35c1748f8e4e239d0e2ff25d6d/LICENSE
+https://github.com/microsoft/onnxruntime/blob/b7804b056c30aa35c1748f8e4e239d0e2ff25d6d/ThirdPartyNotices.txt
+
+Pranešimai apima ONNX Runtime programinį kodą, kartu pateikiamus JavaScript
+ir WebAssembly failus bei oficialiame pranešime išvardytus komponentus.
+Originalus Microsoft trečiųjų šalių pranešimų tekstas pateikiamas visas ir
+neverstas; dalis jame išvardytų komponentų gali nebūti naudojama web rinkinyje.
+Runtime WebAssembly failai gali būti pateikiami statinio svetainės rinkinio
+assets kataloge arba gaunami iš tą pačią versiją nurodančio jsDelivr adreso:
+https://cdn.jsdelivr.net/npm/onnxruntime-web@1.26.0-dev.20260416-b7804b056c/dist/
+
+4. Depth Anything V2 Small — gylio modelis
+
+Modelio ID: onnx-community/depth-anything-v2-small
+Prisegta modelio revizija: c70d1ddbcd93c9bda8098268cc3554adf5e8dd4f
+Variantas: q8, onnx/model_quantized.onnx (apie 27,3 MB)
+Licencija: Apache License 2.0
+Licencijos tekstas: transformers-Apache-2.0.txt (standartinis Apache 2.0 tekstas)
+Modelio kūrėjai: Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao,
+Xiaogang Xu, Jiashi Feng ir Hengshuang Zhao.
+ONNX konversija / platinimas: ONNX Community, Hugging Face.
+Prisegtas modelis:
+https://huggingface.co/onnx-community/depth-anything-v2-small/tree/c70d1ddbcd93c9bda8098268cc3554adf5e8dd4f
+Originalus projektas ir Small modelio licencijos patvirtinimas:
+https://github.com/DepthAnything/Depth-Anything-V2#license
+Straipsnis: Depth Anything V2, 2024, https://arxiv.org/abs/2406.09414
+
+Čia naudojamas Small modelis. Kitų dydžių modelių licencijos gali skirtis.
+Modelio svoriai nėra įtraukiami į projekto šaltinio kodą: jie atsisiunčiami
+generavimo metu iš aukščiau nurodytos prisegtos Hugging Face revizijos.
+
+VEIKIMAS IR REZULTATO PRASMĖ
+
+Nuotraukos gylis apskaičiuojamas šiame įrenginyje, atskirame naršyklės
+Web Worker, naudojant vieną CPU WebAssembly giją. Nuotrauka šiam skaičiavimui
+nesiunčiama į Hugging Face, jsDelivr ar kitą nuotolinę AI paslaugą.
+Tinklo užklausos naudojamos viešiems modelio ir vykdymo failams gauti.
+
+Pirmą kartą gali būti atsisiunčiama apie 50 MB (paprastai apie 40–55 MB,
+priklausomai nuo naršyklės, runtime failų ir jau turimos podėlio kopijos).
+Pats q8 modelis sudaro apie 27,3 MB, runtime — papildomai apie 12–25 MB.
+Naršyklės podėlis gali sumažinti paskesnių generavimų duomenų siuntimą;
+podėlio išlikimas priklauso nuo naršyklės nustatymų ir laisvos vietos.
+
+Iš vienos nuotraukos gaunamas santykinio gylio žemėlapis, iš kurio sudaromas
+nuotrauka padengtas erdvinis reljefas. Tai vieno matomo paviršiaus 3D
+interpretacija, o ne metriniu tikslumu atkurta visa patalpa. Modelis neatkuria
+nuotraukoje nematomų pusių ir negarantuoja tikrų geometrinių matmenų.
+Normalizuotos gylio vertės nėra metrai. Matavimų reikšmes ir vienetus įrašo
+vartotojas, remdamasis realiai išmatuotais dydžiais.
