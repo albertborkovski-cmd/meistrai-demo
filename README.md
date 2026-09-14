@@ -31,7 +31,9 @@ Vienas paskutinis 3D projektas automatiškai saugomas šioje naršyklėje. Nauja
 
 ## Nuotraukų seka
 
-3D skiltyje pasirinkite **Nuotraukų seka**: pridėkite iki 12 kadrų, sugeneruokite jų gylį ir sujunkite naują kampą su jau esančiu scenoje, pažymėję po tris tas pačias detales abiejose nuotraukose. Sistema apskaičiuoja apytikslį pasukimą, mastelį ir padėtį. Galima tikslinti orientyrus, paslėpti sluoksnius, sukti sceną 360°, žymėti matmenis kiekviename kadre ir eksportuoti matomus sujungtus kampus į bendrą GLB.
+3D skiltyje pasirinkite **Nuotraukų seka**: pridėkite iki 12 kadrų ir spauskite **Sujungti automatiškai**. Sistema pati paruoš trūkstamą gylį, aptiks bendras detales ir prijungs erdvinę patikrą praėjusius kampus. Esami sujungimai išlieka. Ataskaita paaiškina, kurie kadrai nesujungti ir kodėl; galima atšaukti skaičiavimą arba paskutinį sujungimą. Taip pat išlieka rankinis sujungimas, pažymint po tris tas pačias detales abiejose nuotraukose. Sistema apskaičiuoja apytikslį pasukimą, mastelį ir padėtį. Galima tikslinti orientyrus, paslėpti sluoksnius, sukti sceną 360°, žymėti matmenis kiekviename kadre ir eksportuoti matomus sujungtus kampus į bendrą GLB.
+
+OpenCV vaizdų palyginimo variklis (apie 11 MB) atsisiunčiamas tik paleidus automatinį sujungimą. Nuotraukos apdorojamos tik įrenginyje. DI sugeneruoti kambario kampai gali neturėti tarpusavyje suderinamos geometrijos, todėl nesujungiami.
 
 Tai atskiri suderinti paviršiai su galimais tarpais ir persidengimais; automatinė fotogrametrija ir nuotraukose nematomos pusės neatkuriamos. Atskirai saugomas vienas paskutinis sekos projektas; ankstesnis vienos nuotraukos projektas išlieka. Fotografuokite tą pačią nejudančią erdvę iš persidengiančių pozicijų ir naudokite ranka išmatuotus dydžius.
 

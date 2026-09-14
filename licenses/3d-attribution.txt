@@ -82,3 +82,20 @@ interpretacija, o ne metriniu tikslumu atkurta visa patalpa. Modelis neatkuria
 nuotraukoje nematomų pusių ir negarantuoja tikrų geometrinių matmenų.
 Normalizuotos gylio vertės nėra metrai. Matavimų reikšmes ir vienetus įrašo
 vartotojas, remdamasis realiai išmatuotais dydžiais.
+
+5. OpenCV.js — automatinis bendrų vaizdo detalių atpažinimas
+
+Versija: 4.13.0
+Oficialus rinkinys: https://docs.opencv.org/4.13.0/opencv.js
+Failo dydis: 10 964 323 baitai
+SHA-256: 63366510248adf3a7eddf3e793dd825404efb7df3749f4d6f8557c7fa4ca8aa0
+Licencija: Apache License 2.0
+Licencijos kopija: opencv-Apache-2.0.txt
+Šaltinis: https://github.com/opencv/opencv/tree/4.13.0
+
+Nepakeistas oficialus JavaScript / įterpto WebAssembly rinkinys pateikiamas
+kartu su svetaine ir įkeliamas tik pradėjus automatinį sujungimą. ORB,
+Hamming atitikmenys bei RANSAC naudojami bendroms detalėms rasti. Nuotraukos
+apdorojamos vietiniame naršyklės worker; į išorinį serverį nesiunčiamos.
+Automatinis sujungimas nėra pilno kambario rekonstrukcija ar fizinio
+matmenų tikslumo patvirtinimas.
