@@ -28,3 +28,9 @@ Atnaujintas dizainas: interaktyvus interjero vaizdas, animuoti perėjimai ir tik
 Pažymėkite du taškus, įrašykite realiai išmatuotą atstumą bei pastabą. Galima apskaičiuoti paviršiaus plotą su medžiagų atsarga, atsisiųsti GLB modelį ir tekstinį matmenų planą arba paruošti darbo užklausą. Tai vienos nuotraukos santykinio gylio paviršius, ne tikslus visų objekto pusių skenavimas. Centimetrų modelis nenustato.
 
 Vienas paskutinis 3D projektas automatiškai saugomas šioje naršyklėje. Nauja nuotrauka jį pakeičia. Nuotrauka prie darbo užklausos automatiškai nepridedama. [3D komponentų, modelio ir licencijų informacija](licenses/3d-attribution.txt).
+
+## Nuotraukų seka
+
+3D skiltyje pasirinkite **Nuotraukų seka**: pridėkite iki 12 kadrų, sugeneruokite jų gylį ir sujunkite naują kampą su jau esančiu scenoje, pažymėję po tris tas pačias detales abiejose nuotraukose. Sistema apskaičiuoja apytikslį pasukimą, mastelį ir padėtį. Galima tikslinti orientyrus, paslėpti sluoksnius, sukti sceną 360°, žymėti matmenis kiekviename kadre ir eksportuoti matomus sujungtus kampus į bendrą GLB.
+
+Tai atskiri suderinti paviršiai su galimais tarpais ir persidengimais; automatinė fotogrametrija ir nuotraukose nematomos pusės neatkuriamos. Atskirai saugomas vienas paskutinis sekos projektas; ankstesnis vienos nuotraukos projektas išlieka. Fotografuokite tą pačią nejudančią erdvę iš persidengiančių pozicijų ir naudokite ranka išmatuotus dydžius.
