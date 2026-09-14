@@ -34,3 +34,9 @@ Vienas paskutinis 3D projektas automatiškai saugomas šioje naršyklėje. Nauja
 3D skiltyje pasirinkite **Nuotraukų seka**: pridėkite iki 12 kadrų, sugeneruokite jų gylį ir sujunkite naują kampą su jau esančiu scenoje, pažymėję po tris tas pačias detales abiejose nuotraukose. Sistema apskaičiuoja apytikslį pasukimą, mastelį ir padėtį. Galima tikslinti orientyrus, paslėpti sluoksnius, sukti sceną 360°, žymėti matmenis kiekviename kadre ir eksportuoti matomus sujungtus kampus į bendrą GLB.
 
 Tai atskiri suderinti paviršiai su galimais tarpais ir persidengimais; automatinė fotogrametrija ir nuotraukose nematomos pusės neatkuriamos. Atskirai saugomas vienas paskutinis sekos projektas; ankstesnis vienos nuotraukos projektas išlieka. Fotografuokite tą pačią nejudančią erdvę iš persidengiančių pozicijų ir naudokite ranka išmatuotus dydžius.
+
+## 360° kambarys
+
+**3D → 360° kambarys** atveria pilną redaguojamą miegamojo koncepciją: dairykitės viduje 360°, sukite išorės vaizdą, naudokite planą arba įjunkite automatinį turą. Keiskite kambario ir baldų matmenis, baldų padėtį, pasukimą bei spalvas. Galite atsisiųsti visą GLB modelį su keturiomis sienomis ir lubomis bei TXT matmenų planą.
+
+Tai paruošta interjero koncepcija su pavyzdiniais dydžiais, ne automatinė įkeltų nuotraukų rekonstrukcija. Esama nuotraukų seka naudojama tik vizualinėms nuorodoms ir lieka nepakeista. Koncepcija atskirai saugoma šios naršyklės localStorage.
